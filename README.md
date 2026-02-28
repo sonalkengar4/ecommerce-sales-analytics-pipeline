@@ -1,54 +1,102 @@
-# ecommerce-sales-analytics-pipeline
-Zero-cost E-commerce Sales Analytics Pipeline using Python, Pandas and SQLite
+# 🛒 Zero-Cost E-Commerce Sales Analytics Pipeline
 
-🔹 Project Overview
+## 📌 Project Overview
 
-This project builds a zero-cost end-to-end analytics pipeline using Python, Pandas, and SQLite to analyze e-commerce sales data.
+This project demonstrates a zero-cost end-to-end data analytics pipeline for an e-commerce dataset using:
 
-🔹 Tech Stack
+- Python
+- SQLite (lightweight database)
+- Pandas
+- AWS S3 (for cloud storage)
 
-Python
+The objective is to simulate a real-world data pipeline without using paid database services.
 
-Pandas
+---
 
-SQLite
+## 🏗 Architecture
 
-SQL
+Raw CSV → SQLite → SQL Queries → Pandas Transformations → Processed CSV → AWS S3
 
-🔹 Data Processing Steps
+---
 
-Generated synthetic e-commerce dataset
+## ⚙️ Tech Stack
 
-Cleaned and transformed data using Pandas
+- Python 3.10+
+- Pandas
+- NumPy
+- SQLite (built-in with Python)
+- Boto3 (AWS SDK)
 
-Converted order_date to datetime
+---
 
-Created total_amount column
+## 📂 Project Structure
+ecommerce-sales-analytics-pipeline/
+│
+├── data/
+│ ├── raw/
+│ └── processed/
+│
+├── src/
+│ ├── sqlite_loading.py
+│ ├── sql_queries.py
+│ └── data_transformation.py
+│
+├── requirements.txt
+└── README.md
 
-Extracted order_month for time-series analysis
+---
 
-Loaded processed data into SQLite
+## 🚀 How to Run This Project
 
-Executed SQL queries to extract insights
+### 1️⃣ Clone Repository
 
-🔹 Key Business Insights
+```bash
+git clone https://github.com/sonalkengar4/ecommerce-sales-analytics-pipeline.git
+cd ecommerce-sales-analytics-pipeline
 
-Sports category generated highest revenue
+**Install Dependencies**
 
-Kolkata recorded highest sales
+pip install -r requirements.txt
 
-Credit card was most used payment method
+**Run Scripts**
 
-Month 1 recorded highest revenue
+python src/sqlite_loading.py
+python src/sql_queries.py
+python src/data_transformation.py
 
-🔹 Skills Demonstrated
+**Processed file will be generated inside:**
 
-Data cleaning
+data/processed/
 
-Feature engineering
+-----
 
-Time-series analysis
+📊 Key Features
 
-SQL aggregations
+Zero-cost local database setup using SQLite
 
-Data pipeline architecture
+SQL-based data extraction
+
+Pandas-based transformation
+
+Clean project structure
+
+Cloud storage integration with AWS S3
+
+🎯 Learning Outcomes
+
+Data pipeline structuring
+
+SQL + Pandas integration
+
+Environment dependency management
+
+GitHub project organization
+
+Basic cloud integration (AWS S3)
+
+---
+
+👤 Author
+
+Sonalkengar
+Aspiring Data Engineer
