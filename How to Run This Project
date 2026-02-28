@@ -1,5 +1,0 @@
-git clone https://github.com/yourname/ecommerce-sales-analytics-pipeline
-cd ecommerce-sales-analytics-pipeline
-pip install -r requirements.txt
-python scripts/data_transformation.py
-python scripts/sqlite_loader.py
